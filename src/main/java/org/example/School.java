@@ -5,11 +5,8 @@ package org.example;
 import java.util.*;
 import java.util.logging.*;
 
-class myException extends Exception{
-    public myException(String s){
-        super(s);
-    }
-}
+
+
  class School {
 
     String studentName;
