@@ -27,10 +27,15 @@ public class BasicPoint implements Cloneable {
     }
 
 
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Object clone()  {
+        try{
+            return super.clone();
+        }
+        catch (CloneNotSupportedException e){
+            return this;
+        }
     }
-    public static void main(String[] args) throws CloneNotSupportedException{
+    public static void main(String[] args) {
         double x;
         double y;
         Scanner sc = new Scanner(System.in);

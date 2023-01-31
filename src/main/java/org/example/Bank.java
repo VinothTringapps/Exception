@@ -44,12 +44,12 @@ class Bank {
     public void withDraw(double withDrawAmount) {
         try{
             if (this.accountHolderBalance - withDrawAmount <= 1000)
-                throw new myException("WithDraw Failed !");
+                throw new MyException("WithDraw Failed !");
             this.accountHolderBalance -= withDrawAmount;
             l.info("WithDraw Successful !");
             display();
         }
-        catch (myException e)
+        catch (MyException e)
         {
             l.info(this.accountHolderName);
             String s=" \nWithDraw Failed !\nYour minimum Balance is Low";

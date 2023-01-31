@@ -26,7 +26,7 @@ public class BasicCreditCard implements Cloneable {
     }
 
 
-    protected Object clone() {
+    public Object clone() {
         try {
             return super.clone();
         }
