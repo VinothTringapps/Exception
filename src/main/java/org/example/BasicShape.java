@@ -6,8 +6,7 @@ package org.example;
 //        - A method that calculates and returns the perimeter of the shape.
 //        - A method that calculates and returns the area of the shape. "
 
-import java.util.*;
-import java.util.logging.Logger;
+
 
 public class BasicShape {
     String shapeType;
@@ -61,72 +60,5 @@ public class BasicShape {
     public double rectanglePerimeter(){
         perimeter=(2*this.rectangleLength)+(2*this.rectangleWidth);
         return perimeter;
-    }
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        Logger l=Logger.getLogger("com.api.jar");
-        String shape;
-        String decoration="-----------------------------------------------------";
-        try {
-
-
-            do {
-
-                l.info("\nTriangle \nRectangle \nCircle");
-                l.info("Enter the Type You Want :");
-                shape = sc.nextLine();
-                if (shape.equalsIgnoreCase("triangle")) {
-                    l.info("Enter the length of first Side :");
-                    double triangleLength1 = sc.nextDouble();
-                    l.info("Enter the Length of Second Side :");
-                    double triangleLength2 = sc.nextDouble();
-                    l.info("Enter the Length of Third Side :");
-                    double triangleLength3 = sc.nextDouble();
-                    BasicShape t = new BasicShape(shape, triangleLength1, triangleLength2, triangleLength3);
-                    l.info("\nTriangle \n-------");
-                    String area = "Area of the Triangle :" + t.triangleArea();
-                    l.info(area);
-                    String perimeter = "Perimeter of the Triangle :" + t.trianglePerimeter();
-                    l.info(perimeter);
-                    l.info(decoration);
-                    sc.nextLine();
-                } else if (shape.equalsIgnoreCase("rectangle")) {
-                    l.info("Enter the Length of the Rectangle :");
-                    double rectangleLength = sc.nextDouble();
-                    l.info("Enter the Width of the Rectangle :");
-                    double rectangleWidth = sc.nextDouble();
-                    BasicShape r = new BasicShape(shape, rectangleLength, rectangleWidth);
-                    l.info("\n Rectangle\n---------");
-                    String area = "Area of the Rectangle :" + r.rectangleArea();
-                    l.info(area);
-                    String perimeter = "Perimeter of the Rectangle :" + r.rectanglePerimeter();
-                    l.info(perimeter);
-                    l.info(decoration);
-
-                    sc.nextLine();
-
-                } else if (shape.equalsIgnoreCase("Circle")) {
-                    l.info("Enter the Radius of the Circle :");
-                    double circleRadius = sc.nextDouble();
-                    BasicShape c = new BasicShape(shape, circleRadius);
-                    l.info("\n Circle \n------");
-                    String area = "Area of the Circle :" + c.circleArea();
-                    l.info(area);
-                    String perimeter = "Perimeter of the Circle :" + c.circlePerimeter();
-                    l.info(perimeter);
-                    l.info(decoration);
-
-                    sc.nextLine();
-                } else {
-                    l.info("Wrong shape !");
-                    l.info(decoration);
-
-                }
-            } while (shape.isEmpty());
-        }
-        catch (InputMismatchException e){
-            l.info("Input Mismatched Error !");
-        }
-
     }
 }

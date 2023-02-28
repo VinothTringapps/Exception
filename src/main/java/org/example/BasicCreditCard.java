@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.*;
 import java.util.logging.*;
 //" 3. Design a class for a basic credit card. The class should have the following features:
 //    - Instance variables for the cardholder's name, card number, and expiration date.
@@ -34,35 +33,6 @@ public class BasicCreditCard implements Cloneable {
             l.info("Clone is Not Done");
             return this;
         }
-
-    }
-
-    public static void main(String[] args) {
-        Logger l=Logger.getLogger("com.api.jar");
-        Scanner sc=new Scanner(System.in);
-        l.info("Enter the  Card Holder Name :");
-        String name=sc.nextLine();
-        l.info("Enter the Card Number :");
-        String cardNumber=sc.nextLine();
-        l.info("Enter the Expiry Date :");
-        String expiryDate=sc.nextLine();
-        try {
-            BasicCreditCard b = new BasicCreditCard(name, cardNumber, expiryDate);
-            BasicCreditCard b2 = (BasicCreditCard) b.clone();
-            l.info("Enter the Card holder Name :");
-            String name2 = sc.nextLine();
-            l.info("Enter the Card Number :");
-            String cardNumber2 = sc.nextLine();
-            l.info("Enter the Expiry Dated :");
-            String expiryDate2 = sc.nextLine();
-            BasicCreditCard b3 = new BasicCreditCard(name2, cardNumber2, expiryDate2);
-            String s = "Details are Equal : " + b2.checkEqual(b3);
-            l.info(s);
-        }
-        catch(Exception e){
-            l.info("Clone is Not Done ");
-        }
-
 
     }
 }

@@ -68,36 +68,7 @@ import java.util.logging.*;
 
 
     }
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        Logger l=Logger.getLogger("com.api.jar");
-        School s=new School(null,null,0);
-        String name;
-        String grade;
-        double gradePoints;
 
-        l.info("Enter the Name :");
-        name=sc.nextLine();
-        s.update();
-
-        grade=s.grade;
-        gradePoints=s.gradePoints;
-
-        School s1=new School(name,grade,gradePoints);
-
-        while (true){
-            int choice;
-            l.info("1.display /n 2.Update");
-            choice=sc.nextInt();
-            switch (choice) {
-                case 1 -> s1.display();
-                case 2 -> s1.update();
-                default -> l.info("Wrong Choice !");
-            }
-
-        }
-
-    }
     private Double gradeCal(String s) {
         if (s.equalsIgnoreCase("A")) {
             gradePoints = 5.0;
