@@ -52,6 +52,7 @@ public class ExpectionCls {
                                     l.info("Show Details :");
                                     bank.display();
                                 }
+                                default -> l.info("Enter the Correct Choice !");
 
                             }
                         } while (choice >= 3);
@@ -133,6 +134,7 @@ public class ExpectionCls {
                             switch (choice) {
                                 case 1 -> s1.display();
                                 case 2 -> s1.update();
+                                default -> l.info("Wrong Choice !");
                             }
 
                         }
@@ -160,6 +162,7 @@ public class ExpectionCls {
                                     ConnectionPool connection = ConnectionPool.getInstance();
                                     connection.closeConnection();
                                 }
+                                default -> l.info("\n Enter the Correct Choice !");
                             }
 
                         }
@@ -207,6 +210,8 @@ public class ExpectionCls {
                         String checkEql = "Details are Equal : " + b2.checkEqual(b3);
                         l.info(checkEql);
                     }
+                    default -> l.info("Wrong Choice !");
+
                 }
 
             } while (choice < 7);
