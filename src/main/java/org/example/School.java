@@ -6,7 +6,6 @@ import java.util.*;
 import java.util.logging.*;
 
 
-
  class School {
 
     String studentName;

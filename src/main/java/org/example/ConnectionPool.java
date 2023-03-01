@@ -4,7 +4,6 @@ package org.example;
 import java.sql.*;
 import java.util.logging.*;
 
-
 public class ConnectionPool {
     private static ConnectionPool t2 = null;
     Logger l = Logger.getLogger("ConnectionPool");

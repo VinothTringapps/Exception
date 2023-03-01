@@ -13,8 +13,7 @@ public class BasicCreditCard implements Cloneable {
     String cardHolderName;
     String cardNumber;
     String expiryDate;
-    Logger l=Logger.getLogger("com.api.jar");
-
+    Logger l=Logger.getLogger("BasicCreditCard");
     BasicCreditCard(String name,String cardNumber,String expiryDate){
         this.cardHolderName=name;
         this.cardNumber=cardNumber;

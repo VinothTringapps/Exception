@@ -7,7 +7,6 @@ package org.example;
 //        - A method that calculates and returns the area of the shape. "
 
 
-
 public class BasicShape {
     String shapeType;
     double triangleLength1;

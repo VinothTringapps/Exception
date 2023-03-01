@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.*;
 import java.util.logging.*;
-
 public class ExpectionCls {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

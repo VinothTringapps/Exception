@@ -45,7 +45,6 @@ import java.util.logging.*;
                     bank.display();
                 }
                 default -> l.info("Enter the Correct Choice !");
-
             }
         } while (choice <= 3);
     }
