@@ -5,7 +5,7 @@ import java.util.logging.*;
 public class ExceptionCls {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Logger l = Logger.getLogger("Expection");
+        Logger l = Logger.getLogger("Exception");
         AssMethods access = new AssMethods();
         int option;
         try {
