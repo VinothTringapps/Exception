@@ -16,10 +16,10 @@ public class ExpectionCls {
                 switch (option) {
                     case 1 -> access.bank();
                     case 2 -> access.shape();
-                    case 3 -> access.School();
-                    case 4 -> access.ConnectionPool();
-                    case 5 -> access.BaiscPoint();
-                    case 6 -> access.BasicCreditCard();
+                    case 3 -> access.school();
+                    case 4 -> access.connectionPool();
+                    case 5 -> access.baiscPoint();
+                    case 6 -> access.basicCreditCard();
 
                     default -> l.info("Wrong Choice !");
                 }

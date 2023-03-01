@@ -6,7 +6,7 @@ import java.util.logging.*;
     Scanner sc = new Scanner(System.in);
     Logger l = Logger.getLogger("Expection");
     String s = "----------------------------------";
-     public int choice;
+    int choice;
      protected void bank(){
         l.info("Bank Application");
         l.info(s);
@@ -103,7 +103,7 @@ import java.util.logging.*;
             }
         } while (shape.isEmpty());
     }
-    protected void School(){
+    protected void school(){
         l.info("School Test ");
         l.info(s);
         School school = new School(null, null, 0);
@@ -128,7 +128,7 @@ import java.util.logging.*;
 
         }while(choice<=2);
     }
-    protected void ConnectionPool(){
+    protected void connectionPool(){
         l.info("Connection Pool");
         l.info(s);
         do{
@@ -156,7 +156,7 @@ import java.util.logging.*;
 
         }while (choice<=2);
     }
-    protected void BaiscPoint(){
+    protected void baiscPoint(){
         l.info("Basic Point");
         l.info(s);
         double x;
@@ -177,7 +177,7 @@ import java.util.logging.*;
         String s1 = "Objects are b && b1 are Equal  : " + eql;
         l.info(s1);
     }
-    protected void BasicCreditCard(){
+    protected void basicCreditCard(){
         l.info("Basic Credit Card");
         l.info(s);
         sc.nextLine();
