@@ -7,6 +7,7 @@ import java.util.logging.*;
     Logger l = Logger.getLogger("Expection");
     String s = "----------------------------------";
     int choice;
+
      protected void bank(){
         l.info("Bank Application");
         l.info(s);
